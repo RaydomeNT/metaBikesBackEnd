@@ -1,6 +1,6 @@
 require("./db/connection"); //runs db connection imediately
 const express = require("express");
-const userRouter = require("./user/routes");
+const userRouter = require("./users/routes");
 const app = express();
 const cors = require("cors")
 
