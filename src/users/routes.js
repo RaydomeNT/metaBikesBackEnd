@@ -6,7 +6,7 @@ const { hashPass, comparePasswords, tokenAuth, newHashPass } = require("../middl
 userRouter.post("/user", hashPass, createUser);
 userRouter.post("/login", comparePasswords, login);
 userRouter.get("/list", getAllUsers);
-userRouter.get("/login", tokenAuth, login); //not currently working
+userRouter.get("/login", tokenAuth, login);
 userRouter.patch("/update", updateEmail);
 userRouter.delete("/delete", deleteUser);
 userRouter.patch('/user', comparePasswords, newHashPass, updateUser);
